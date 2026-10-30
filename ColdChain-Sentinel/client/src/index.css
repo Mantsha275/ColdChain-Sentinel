@@ -116,3 +116,19 @@ main p {
   background: #dcfce7;
   color: #166534;
 }
+
+.storage-section {
+  margin-top: 36px;
+}
+
+.storage-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.storage-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

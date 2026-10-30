@@ -1,5 +1,18 @@
 import StorageCard from "./StorageCard";
+
 function App() {
+  const storageUnits = [
+    {
+      name: "Freezer A-01",
+      temperature: -18,
+      status: "Normal",
+    },
+    {
+      name: "Freezer A-02",
+      temperature: -20,
+      status: "Normal",
+    },
+  ];
   return (
     <div className="app">
       <header>
@@ -32,8 +45,21 @@ function App() {
         <section className="storage-section">
           <h2>Storage Units</h2>
           <p>Current temperature readings</p>
+
+          <div className="storage-cards">
+            <StorageCard
+              name="Freezer A-01"
+              temperature={-18}
+              status="Normal"
+            />
+
+            <StorageCard
+              name="Freezer A-02"
+              temperature={-20}
+              status="Normal"
+            />
+          </div>
         </section>
-          <StorageCard />
       </main>
     </div>
   );
